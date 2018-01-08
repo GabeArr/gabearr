@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit|Oswald|Passion+One|Open+Sans');
 
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; } 
+  to { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+  to { opacity: 1; }
+}
+
 .grid-container {
   display: grid;
   width:75%;
@@ -37,14 +50,24 @@
   margin:auto;
 }
 
+.section {
+  padding-bottom: 50px;
+}
+
 body {
-	background-color: #fffefa;
+  /*background: linear-gradient(red, yellow);*/
+	/*background-color: #fffefa;*/
   font-family: 'Oswald', bold;
   font-size: 30px;
   color:#fffefa;
 }
 
+html {
+  background: linear-gradient(#fffefa, #ffefcf);
+}
+
 p {
+  opacity: 0;
   font-size:15px;
   font-family: 'Open Sans', sans-serif;
   /*color: #333333;*/
@@ -75,6 +98,13 @@ html {
   stroke: var(--hover-color)
 }
 
+#shopkick:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #breezy:hover {
   color: var(--hover-color)
 }
@@ -85,6 +115,13 @@ html {
 
 #breezy:hover .st1 {
   fill: var(--hover-color)
+}
+
+#breezy:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #calappointments:hover {
@@ -99,6 +136,13 @@ html {
   fill: var(--hover-color)
 }
 
+#calappointments:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #awkotaco:hover {
   color: var(--hover-color)
 }
@@ -109,6 +153,13 @@ html {
 
 #awkotaco:hover .st1 {
   fill:var(--hover-color)
+}
+
+#awkotaco:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #graphicdesign:hover {
@@ -123,6 +174,13 @@ html {
   fill: var(--hover-color)
 }
 
+#graphicdesign:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #youtube:hover {
   color: var(--hover-color)
 }
@@ -133,6 +191,13 @@ html {
 
 #youtube:hover .st1 {
   fill: var(--hover-color)
+}
+
+#youtube:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #labassistant:hover {
@@ -147,6 +212,13 @@ html {
   fill: var(--hover-color)
 }
 
+#labassistant:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #securefiles:hover {
   color: var(--hover-color)
 }
@@ -157,6 +229,13 @@ html {
 
 #securefiles:hover .st1 {
   fill: var(--hover-color)
+}
+
+#securefiles:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #shakespeare:hover {
@@ -171,6 +250,13 @@ html {
   fill: var(--hover-color)
 }
 
+#shakespeare:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #steal:hover {
   color: var(--hover-color)
 }
@@ -181,6 +267,13 @@ html {
 
 #steal:hover .st1 {
   fill: var(--hover-color)
+}
+
+#steal:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #car:hover {
@@ -195,6 +288,13 @@ html {
   fill: var(--hover-color)
 }
 
+#car:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #comics:hover {
   color: var(--hover-color)
 }
@@ -207,8 +307,29 @@ html {
   fill: var(--hover-color)
 }
 
+#comics:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 .st0{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
-.st1{fill:#333333;}
+
+.st1 {
+  fill: #333333;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1; 
+  -moz-animation: fadeIn ease-in 1; 
+  animation: fadeIn ease-in 1; 
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+}
 
 path, circle, line, polygon{
   stroke-width: 3;
@@ -634,18 +755,3 @@ path, circle, line, polygon{
   }
 }
 
-/*svg:hover .st0 { 
-  stroke: red; 
-}*/
-
-/*#testing:hover {
-  stroke: red;
-}*/
-
-/*.st0:hover {
-  stroke: red;
-}*/
-
-
-/*.st0 {stroke:red;}*/
-/*svg:hover #st0 { stroke: red; }*/
