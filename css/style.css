@@ -4,13 +4,33 @@
   from { opacity: 0; } 
   to { opacity: 1; }
 }
+
 @-moz-keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 @keyframes fadeIn { 
   from { opacity: 0; } 
   to { opacity: 1; }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+.section1 {
+  font-size:20px;
+  padding-top:20%;
+  padding-bottom:20px;
 }
 
 .grid-container {
@@ -18,26 +38,21 @@
   width:75%;
   align-content: end;
   grid-template-columns: auto auto auto auto;
-/*  grid-gap: 10px;
-  padding: 10px;*/
   margin: auto;
-  /*background-color: #2196F3;*/
-
+  padding-top:2%;
+  padding-bottom:2%;
 }
 
 .grid-container-title {
   display: grid;
-  width:75%;
+  width:50%;
   align-content: end;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   margin: auto;
-  padding-top:40px;
-  /*background-color: #2196F3;*/
-
+  padding-top:3%;
 }
 
 .grid-item {
-  padding: 0px;
   font-size: 15px;
   text-align: center;
   color: #fffefa;
@@ -48,30 +63,22 @@
   padding: 0px;
   text-align: center;
   margin:auto;
-}
-
-.section {
-  padding-bottom: 50px;
+  font-size:20px;
 }
 
 body {
-  /*background: linear-gradient(red, yellow);*/
-	/*background-color: #fffefa;*/
+  height:100%;
+  width:100%;
   font-family: 'Oswald', bold;
-  font-size: 30px;
   color:#fffefa;
-}
-
-html {
   background: linear-gradient(#fffefa, #ffefcf);
+  background-size:cover;
 }
 
 p {
   opacity: 0;
   font-size:15px;
   font-family: 'Open Sans', sans-serif;
-  /*color: #333333;*/
-  /*color: #333333;*/
 }
 
 b {
@@ -90,6 +97,47 @@ html {
   stroke: var(--hover-color)
 }
 
+#logo1 {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+#logo2 {
+  stroke-dasharray: 101;
+  stroke-dashoffset: 90;
+}
+
+#logo3 {
+  stroke-dasharray: 101;
+  stroke-dashoffset: 101;
+}
+
+#logo4 {
+  stroke-dasharray: 208;
+  stroke-dashoffset: 208;
+}
+
+#logo5 {
+  stroke-dasharray: 103;
+  stroke-dashoffset: 103;
+}
+
+#logo6 {
+  stroke-dasharray: 103;
+  stroke-dashoffset: 103;
+}
+
+#logo7 {
+  stroke-dasharray: 103;
+  stroke-dashoffset: 103;
+}
+
+#logo8 {
+  stroke-dasharray: 103;
+  stroke-dashoffset: 103;
+}
+
+
 #shopkick:hover {
   color: var(--hover-color);
 }
@@ -103,6 +151,11 @@ html {
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
   animation-duration: 1s;
+}
+
+#shopkick1 {
+  stroke-dasharray: 422;
+  stroke-dashoffset: 422;
 }
 
 #breezy:hover {
@@ -124,6 +177,36 @@ html {
   animation-duration: 1s;
 }
 
+#breezy1 {
+  stroke-dasharray:20;
+  stroke-dashoffset:20;
+}
+
+#breezy2 {
+  stroke-dasharray:31;
+  stroke-dashoffset:31;
+}
+
+#breezy3 {
+  stroke-dasharray:31;
+  stroke-dashoffset:31;
+}
+
+#breezy4 {
+  stroke-dasharray:33;
+  stroke-dashoffset:33;
+}
+
+#breezy5 {
+  stroke-dasharray:48;
+  stroke-dashoffset:48;
+}
+
+#breezy6 {
+  stroke-dasharray:523;
+  stroke-dashoffset:523;
+}
+
 #calappointments:hover {
   color:var(--hover-color)
 }
@@ -143,6 +226,46 @@ html {
   animation-duration: 1s;
 }
 
+#cal1 {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+}
+
+#cal2 {
+  stroke-dasharray: 266;
+  stroke-dashoffset: 266;
+}
+
+#cal3 {
+  stroke-dasharray: 135;
+  stroke-dashoffset: 135;
+}
+
+#cal4 {
+  stroke-dasharray: 68;
+  stroke-dashoffset: 68;
+}
+
+#cal5 {
+  stroke-dasharray: 61;
+  stroke-dashoffset: 61;
+}
+
+#cal6 {
+  stroke-dasharray: 45;
+  stroke-dashoffset: 45;
+}
+
+#cal7 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+}
+
+#cal8 {
+  stroke-dasharray: 49;
+  stroke-dashoffset: 49;
+}
+
 #awkotaco:hover {
   color: var(--hover-color)
 }
@@ -160,192 +283,6 @@ html {
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-}
-
-#graphicdesign:hover {
-  color: var(--hover-color)
-}
-
-#graphicdesign:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#graphicdesign:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#graphicdesign:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#youtube:hover {
-  color: var(--hover-color)
-}
-
-#youtube:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#youtube:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#youtube:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#labassistant:hover {
-  color: var(--hover-color)
-}
-
-#labassistant:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#labassistant:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#labassistant:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#securefiles:hover {
-  color: var(--hover-color)
-}
-
-#securefiles:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#securefiles:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#securefiles:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#shakespeare:hover {
-  color: var(--hover-color)
-}
-
-#shakespeare:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#shakespeare:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#shakespeare:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#steal:hover {
-  color: var(--hover-color)
-}
-
-#steal:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#steal:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#steal:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#car:hover {
-  color: var(--hover-color)
-}
-
-#car:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#car:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#car:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-#comics:hover {
-  color: var(--hover-color)
-}
-
-#comics:hover .st0 {
-  stroke: var(--hover-color)
-}
-
-#comics:hover .st1 {
-  fill: var(--hover-color)
-}
-
-#comics:hover p {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-.st0{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
-
-.st1 {
-  fill: #333333;
-  opacity: 0;
-  -webkit-animation: fadeIn ease-in 1; 
-  -moz-animation: fadeIn ease-in 1; 
-  animation: fadeIn ease-in 1; 
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
-}
-
-path, circle, line, polygon{
-  stroke-width: 3;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-name: draw;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-}
-
-
-#shopkickplease {
-  /*stroke: #666;*/
-  stroke-dasharray: 422;
-  stroke-dashoffset: 422;
-  /*animation-duration: 3s;*/
 }
 
 #taco1 {
@@ -393,80 +330,24 @@ path, circle, line, polygon{
   stroke-dashoffset: 13;
 }
 
-#breezy1 {
-  stroke-dasharray:20;
-  stroke-dashoffset:20;
+#graphicdesign:hover {
+  color: var(--hover-color)
 }
 
-#breezy2 {
-  stroke-dasharray:31;
-  stroke-dashoffset:31;
+#graphicdesign:hover .st0 {
+  stroke: var(--hover-color)
 }
 
-#breezy3 {
-  stroke-dasharray:31;
-  stroke-dashoffset:31;
+#graphicdesign:hover .st1 {
+  fill: var(--hover-color)
 }
 
-#breezy4 {
-  stroke-dasharray:33;
-  stroke-dashoffset:33;
+#graphicdesign:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
-
-#breezy5 {
-  stroke-dasharray:48;
-  stroke-dashoffset:48;
-}
-
-#breezy6 {
-  stroke-dasharray:523;
-  stroke-dashoffset:523;
-}
-
-#cal1 {
-  stroke-dasharray: 70;
-  stroke-dashoffset: 70;
-}
-
-#cal2 {
-  stroke-dasharray: 266;
-  stroke-dashoffset: 266;
-}
-
-#cal3 {
-  stroke-dasharray: 135;
-  stroke-dashoffset: 135;
-}
-
-#cal4 {
-  stroke-dasharray: 68;
-  stroke-dashoffset: 68;
-}
-
-#cal5 {
-  stroke-dasharray: 61;
-  stroke-dashoffset: 61;
-}
-
-#cal6 {
-  stroke-dasharray: 45;
-  stroke-dashoffset: 45;
-}
-
-#cal7 {
-  stroke-dasharray: 40;
-  stroke-dashoffset: 40;
-}
-
-#cal8 {
-  stroke-dasharray: 49;
-  stroke-dashoffset: 49;
-}
-
-/*#breezy6 {
-  stroke-dasharray:8;
-  stroke-dashoffset:8;
-}*/
 
 #design1 {
   stroke-dasharray: 496;
@@ -486,6 +367,25 @@ path, circle, line, polygon{
 #design4 {
   stroke-dasharray: 94;
   stroke-dashoffset: 94;
+}
+
+#youtube:hover {
+  color: var(--hover-color)
+}
+
+#youtube:hover .st0 {
+  stroke: var(--hover-color)
+}
+
+#youtube:hover .st1 {
+  fill: var(--hover-color)
+}
+
+#youtube:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #youtube1 {
@@ -513,6 +413,25 @@ path, circle, line, polygon{
   stroke-dashoffset: 93;
 }
 
+#labassistant:hover {
+  color: var(--hover-color)
+}
+
+#labassistant:hover .st0 {
+  stroke: var(--hover-color)
+}
+
+#labassistant:hover .st1 {
+  fill: var(--hover-color)
+}
+
+#labassistant:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
 #lab1 {
   stroke-dasharray: 278;
   stroke-dashoffset: 278;
@@ -528,19 +447,23 @@ path, circle, line, polygon{
   stroke-dashoffset: 208;
 }
 
-#comics1 {
-  stroke-dasharray: 351;
-  stroke-dashoffset: 351;
+#securefiles:hover {
+  color: var(--hover-color)
 }
 
-#comics2 {
-  stroke-dasharray: 260;
-  stroke-dashoffset: 260;
+#securefiles:hover .st0 {
+  stroke: var(--hover-color)
 }
 
-#comics3 {
-  stroke-dasharray: 117;
-  stroke-dashoffset: 117;
+#securefiles:hover .st1 {
+  fill: var(--hover-color)
+}
+
+#securefiles:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #secure1 {
@@ -561,6 +484,25 @@ path, circle, line, polygon{
 #secure4 {
   stroke-dasharray: 33;
   stroke-dashoffset: 33;
+}
+
+#shakespeare:hover {
+  color: var(--hover-color)
+}
+
+#shakespeare:hover .st0 {
+  stroke: var(--hover-color)
+}
+
+#shakespeare:hover .st1 {
+  fill: var(--hover-color)
+}
+
+#shakespeare:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #shakespeare1 {
@@ -596,6 +538,25 @@ path, circle, line, polygon{
 #shakespeare7 {
   stroke-dasharray: 90;
   stroke-dashoffset: 90;
+}
+
+#steal:hover {
+  color: var(--hover-color)
+}
+
+#steal:hover .st0 {
+  stroke: var(--hover-color)
+}
+
+#steal:hover .st1 {
+  fill: var(--hover-color)
+}
+
+#steal:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #steal1 {
@@ -641,6 +602,25 @@ path, circle, line, polygon{
 #steal9 {
   stroke-dasharray: 26;
   stroke-dashoffset: 26;
+}
+
+#car:hover {
+  color: var(--hover-color)
+}
+
+#car:hover .st0 {
+  stroke: var(--hover-color)
+}
+
+#car:hover .st1 {
+  fill: var(--hover-color)
+}
+
+#car:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 #car1 {
@@ -703,55 +683,62 @@ path, circle, line, polygon{
   stroke-dashoffset: 40;
 }
 
-#logo1 {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
+#comics:hover {
+  color: var(--hover-color)
 }
 
-#logo2 {
-  stroke-dasharray: 101;
-  stroke-dashoffset: 101;
+#comics:hover .st0 {
+  stroke: var(--hover-color)
 }
 
-#logo3 {
-  stroke-dasharray: 101;
-  stroke-dashoffset: 101;
+#comics:hover .st1 {
+  fill: var(--hover-color)
 }
 
-#logo4 {
-  stroke-dasharray: 208;
-  stroke-dashoffset: 208;
+#comics:hover p {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
-#logo5 {
-  stroke-dasharray: 103;
-  stroke-dashoffset: 103;
+#comics1 {
+  stroke-dasharray: 351;
+  stroke-dashoffset: 351;
 }
 
-#logo6 {
-  stroke-dasharray: 103;
-  stroke-dashoffset: 103;
+#comics2 {
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
 }
 
-#logo7 {
-  stroke-dasharray: 103;
-  stroke-dashoffset: 103;
+#comics3 {
+  stroke-dasharray: 117;
+  stroke-dashoffset: 117;
 }
 
-#logo8 {
-  stroke-dasharray: 103;
-  stroke-dashoffset: 103;
-}
+.st0{
+  fill:none;
+  stroke:#333333;
+  stroke-width:3;
+  stroke-miterlimit:10;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: draw;
+  animation-timing-function: linear;
+  animation-duration: 1s;}
 
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+.st1 {
+  fill: #333333;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1; 
+  -moz-animation: fadeIn ease-in 1; 
+  animation: fadeIn ease-in 1; 
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
 }
-
-@keyframes show {
-  to {
-    opacity: 1;
-  }
-}
-
