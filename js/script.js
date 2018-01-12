@@ -6,3 +6,13 @@ function getLength() {
 		window.alert(arguments[i] + ' ' + length)
   }
 }
+
+window.addEventListener("DOMContentLoaded", function() {
+  let items = document.querySelectorAll(".grid-item");
+
+  Array.from(items, function(item) {
+    item.addEventListener("click", function() {
+      alert(this.classList[1]);
+    });
+  });
+});
