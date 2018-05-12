@@ -7,17 +7,17 @@
 
 </head>
 
-<body>
+<body onload="setDashArrayAndOffset()">
 
-<div id="top">
+<div class="top">
   <div id="nav-bar" class="grid-container-title">
     <a href="about.html" class="grid-item-title">
-      <b class="fade-in">ABOUT</b>
+      <div class="fade-in">ABOUT</div>
     </a>
     <a href="projects.html" class="grid-item-title">
-      <b class="fade-in">PROJECTS</b>
+      <div class="fade-in">PROJECTS</div>
     </a>
-    <a href="index.html" class="grid-item-title">
+    <a id="logo" href="index.html" class="grid-item-title">
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 154.3 154.3" height="70" width="70"
          style="enable-background:new 0 0 143 143;" xml:space="preserve">
@@ -45,10 +45,10 @@
       </svg>
     </a>
     <a href="skills.html" class="grid-item-title">
-      <b class="fade-in">SKILLS</b>
+      <div class="fade-in">SKILLS</div>
     </a>
     <a href="contact.html" class="grid-item-title">
-      <b class="fade-in">CONTACT</b>
+      <div class="fade-in">CONTACT</div>
     </a>
   </div>
 </div>
@@ -141,8 +141,7 @@
           </g>
           <g>
             <g>
-              <polygon id="testing-this-out" class="drawn-stroke black-stroke" points="114.4,171.8 90.1,171.8 10.7,1.5 161.2,1.5 161.2,26.5 49.9,26.5 102.2,138.7 131.7,75.5 
-                96.9,75.5 96.9,50.5 170.9,50.5          "/>
+              <path class="drawn-stroke black-stroke" d="M114.4,171.8H90.1L10.7,1.5l150.5,0v25l-111.3,0l52.3,112.2l29.5-63.2H96.9v-25h74L114.4,171.8z"/>
             </g>
             <g>
               <path class="drawn-stroke black-stroke" d="M326.6,188.1H242V1.5h80.1v52.7l-10.2,5.9h14.7V188.1z"/>
@@ -168,8 +167,7 @@
                 C490.4,45.1,511.1,82,511.1,82l3.1,5.6l-34.9,75.5h62.1V188.1z"/>
             </g>
             <g>
-              <polygon class="drawn-stroke black-stroke" points="647,188.1 547.3,188.1 547.3,1.5 572.3,1.5 572.3,163.1 600.9,163.1 587.9,143.2 608.9,129.5 
-                          "/>
+              <path class="drawn-stroke black-stroke" d="M647,188.1h-99.7V1.5h25v161.6h28.6l-13-19.9l20.9-13.7L647,188.1z"/>
             </g>
             <g>
               <path class="drawn-stroke black-stroke" d="M187.9,383.3L152,325.1v58.3h-25V196.8h80.1v81.8l-40.8,23.5l42,66.6L187.9,383.3z"/>
@@ -180,16 +178,14 @@
               <path class="drawn-stroke black-stroke" d="M239,221.8v59.7l30.1-17.3v-42.4H239z"/>
             </g>
             <g>
-              <polygon class="drawn-stroke black-stroke" points="390.5,383.3 299.6,383.3 299.6,361.2 335.2,283.9 299.8,220.7 299.8,196.8 390.8,196.8 
-                390.8,221.8 329.1,221.8 363.3,282.8 328.4,358.3 390.5,358.3           "/>
+              <path class="drawn-stroke black-stroke" d="M390.5,383.3h-90.9l0-22.2l35.7-77.2l-35.4-63.2l0-23.9h90.9v25h-61.7l34.2,61l-34.9,75.5h62.1V383.3z"/>
             </g>
             <g>
               <path class="drawn-stroke black-stroke" d="M473.7,383.3h-50.4l-28.4-186.6h107.3L473.7,383.3z"/>
               <path class="drawn-stroke black-stroke" d="M444.8,358.3h7.5l20.8-136.6h-49.1L444.8,358.3z"/>
             </g>
             <g>
-              <polygon class="drawn-stroke black-stroke" points="606.9,383.3 507.2,383.3 507.2,196.8 532.2,196.8 532.2,358.3 560.7,358.3 547.8,338.5 
-                568.7,324.8           "/>
+              <path class="drawn-stroke black-stroke" d="M606.9,383.3h-99.7V196.8h25v161.6h28.6l-13-19.9l20.9-13.7L606.9,383.3z"/>
             </g>
             <path class="drawn-stroke black-stroke" d="M612.3,265c-17.1-36.6-31.8-68.2-31.8-68.2h-35.3v122.8h25c0,0,0-14.4,0-22c10.2,0,23.5,0,29.7,0
               c10.1,21.6,40.7,87.2,40.7,87.2l22.7-10.6C663.2,374.2,635.6,315,612.3,265z"/>
@@ -203,7 +199,7 @@
         </g>
       </g>
   </svg>
-  <center> <h1 class="subtitle animate-reveal animate-first">DESIGNER</h1>  <h1 class="subtitle animate-reveal animate-second">PROGRAMMER</h1>  <h1 class="subtitle animate-reveal animate-third">ILLUSTRATOR</h1> </center>
+  <center class="subtitles"> <div class="subtitle animate-reveal animate-first">DESIGNER</div>  <div class="subtitle animate-reveal animate-second">PROGRAMMER</div>  <div class="subtitle animate-reveal animate-third">ILLUSTRATOR</div> </center>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
