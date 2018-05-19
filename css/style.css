@@ -147,6 +147,16 @@ a:visited {
 
 a:hover {
   color: #F39877;
+  cursor: pointer;
+}
+
+.external_links:hover .change_opacity{
+  fill-opacity:.5;
+  stroke:none;
+}
+
+.external_links:hover .change_to_pink{
+  stroke:#F39877;
 }
 
 /*a:active {
@@ -420,11 +430,11 @@ div.top {
   stroke-width:2.5;
 }
 
-.scroll-proj:hover .black-fill{
+/*.scroll-proj:hover .black-fill{
   stroke:#F39877;
   stroke-width:2.5;
   fill:#F39877;
-}
+}*/
 
 #exit:hover{
   cursor:pointer;

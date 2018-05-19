@@ -470,3 +470,5 @@ function exitTV(){
   tv.style.display = "none";
 }
 
+var  mylink = document.getElementById("github_link");
+
