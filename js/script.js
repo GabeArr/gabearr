@@ -449,6 +449,7 @@ $("#message").text(projects[0].content);
 function tvTime(i){
   var navbar = document.getElementById('projNavBar');
   navbar.style.webkitFilter = "blur(20px)";
+  navbar.style.zIndex = "-1";
   var cds = document.getElementById('projects');
   cds.style.webkitFilter = "blur(30px)";
   var tv = document.getElementById('tvset');
@@ -464,6 +465,7 @@ function tvTime(i){
 function exitTV(){
   var navbar = document.getElementById('projNavBar');
   navbar.style.webkitFilter = "blur(0px)";
+  navbar.style.zIndex = "0";
   var cds = document.getElementById('projects');
   cds.style.webkitFilter = "blur(0px)";
   var tv = document.getElementById('tvset');
