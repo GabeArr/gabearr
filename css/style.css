@@ -147,6 +147,16 @@ a:visited {
 
 a:hover {
   color: #F39877;
+  cursor: pointer;
+}
+
+.external_links:hover .change_opacity{
+  fill-opacity:.5;
+  stroke:none;
+}
+
+.external_links:hover .change_to_pink{
+  stroke:#F39877;
 }
 
 /*a:active {
@@ -518,7 +528,8 @@ p {
   font-size:12.8px;
   font-family:'Open Sans', sans-serif;
   line-height:1.4;
-}
+/*  border: 1px solid #f39877;
+*/}
 
 b {
   font-size:20px;
@@ -528,6 +539,7 @@ b {
 .projecttitle {
   font-size:30px;
   padding-bottom:none;
+  /*display:none;*/
 }
 
 html {
