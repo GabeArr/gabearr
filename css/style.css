@@ -279,18 +279,59 @@ input[type=submit] {
   transform: translateY(-50%);*/
 }
 
-.column2-bottom {
+/*.column2-bottom {
   width:100%;
-  height:60%;
-  /*padding-top:3%;*/
+  height:40%;
   border: 1px solid #f39877;
   border-radius: 10px 10px 10px 10px;
+}*/
+
+#skill-section {
+  width:100%;
+  height:60%;
+  border: 1px solid #f39877;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#projectlinks {
+  font-family:'Open Sans', sans-serif;
+  color:#333333;
+  font-size:13px;
+  /*text-shadow: 0 0 5px #333333;*/
+  /*text-align:center;*/
+  background-color:#f39877;
+  border-radius:3px;
+  padding: 5px 10px;
+}
+
+#projectlinks:hover {
+  color:#f39877;
+  background-color:#333333;
+  cursor:pointer;
+  /*border:1px solid #f39877;*/
+  /*outline:blue;*/
+}
+
+.column2-bottom2 {
+  width:100%;
+  height:15%;
+  margin-top:10px;
+/*  border: 1px solid #f39877;
+  border-radius: 10px 10px 10px 10px;*/
   /*background-color:#FFFAEC;*/
 }
+
 
 .inner-column2-bottom {
   height:100%;
   width:85%;
+  padding-top:8px;
+  margin:auto;
+}
+
+.inner-column2-bottom2 {
+  height:100%;
+  width:100%;
   padding-top:8px;
   margin:auto;
 }
@@ -553,8 +594,19 @@ b {
 .projecttitle {
   font-size:30px;
   padding-bottom:none;
+  display: inline-block;
+  padding-right:10px;
   /*display:none;*/
 }
+
+#projectdate {
+  font-size:15px;
+  display: inline-block;
+  font-family:'Open Sans', sans-serif;
+  /*color: #F39877;*/
+  color: #333333;
+}
+
 
 html {
   /*background:linear-gradient(white, tan);*/
