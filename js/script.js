@@ -147,7 +147,7 @@ $( document ).ready(function() {
   $('.drawn-stroke').animate({'stroke-dashoffset': 0}, 2000, "swing");
 
   var contactSpaceWidth = document.getElementById("contactformspace").getAttribute("width");
-  document.getElementById("contact-form").setAttribute("style", "width:" + contactSpaceWidth.toString() + "px");
+  // document.getElementById("contact-form").setAttribute("style", "width:" + contactSpaceWidth.toString() + "px");
 });
 
 
@@ -417,6 +417,17 @@ var cars =
       "link": "https://github.com/GabeArr/BeaverDam"
     };
 
+var personal_website = 
+  {
+    "svg":"<use xlink:href='#logo_svg'/>",
+    "title":"Personal Website",
+    "date":"2018",
+    "content":"This is a project that you've already seen because you're using it right now! This website was a fun way to display what knowledge, skills, and projects I've accumulated throughout my college career in a creative way. All illustrations are vector drawings I created and animated for the use of this webpage. I became pretty involved with inline SVG, but I felt the result was worth it. I hope you're enjoying it!",
+    "skills":["HTML","CSS","Javascript","Illustrator"],
+    "linkname":"code",
+    "link":"https://github.com/GabeArr/personal_website"
+  }
+
 var projects = [];
 
 projects[0]=breezy;
@@ -424,7 +435,7 @@ projects[1]=shopkick;
 projects[2]=calappointments;
 projects[3]=awkotaco;
 projects[4]=graphic_design;
-projects[5]=youtube;
+projects[5]=personal_website;
 projects[6]=lab_assistant;
 projects[7]=comics;
 projects[8]=secure_files;
@@ -506,6 +517,7 @@ function tvTime(i){
   navbar.style.zIndex = "-1";
   var cds = document.getElementById('projects');
   cds.style.webkitFilter = "blur(30px)";
+  cds.style.pointerEvents = "none";
   var tv = document.getElementById('tvset');
   tv.style.display = "block";
   pIndex = i;
@@ -534,6 +546,7 @@ function exitTV(){
   navbar.style.zIndex = "0";
   var cds = document.getElementById('projects');
   cds.style.webkitFilter = "blur(0px)";
+  cds.style.pointerEvents = "";
   var tv = document.getElementById('tvset');
   tv.style.display = "none";
 }
