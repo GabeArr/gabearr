@@ -177,7 +177,8 @@ a:hover {
 }
 
 .message-row3 {
-  height:10%;
+
+  /*height:10%;*/
 }
 
 .message-row1-col1 {
@@ -238,6 +239,7 @@ input[type=email], textarea {
 
 textarea.message {
   height:140px;
+  resize:none;
 }
 
 input[type=submit] {
@@ -530,6 +532,10 @@ div.top {
    padding-top:2.5%;
    resize:vertical;
    height:15%;
+}
+
+.oswald {
+  font-family:'Oswald';
 }
 
 .cd {
